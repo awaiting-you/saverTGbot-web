@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ваши чаты — saverTGbot</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button type="button" id="btn-back" class="back hidden" aria-label="Назад">←</button>
+      <h1 id="title">Ваши чаты</h1>
+    </header>
+
+    <main id="view-chats" class="view">
+      <p id="chats-empty" class="hint hidden">Пока нет чатов с удалёнными сообщениями.</p>
+      <ul id="chat-list" class="chat-list"></ul>
+    </main>
+
+    <main id="view-messages" class="view hidden">
+      <p id="messages-empty" class="hint hidden">В этом чате нет сохранённых удалений.</p>
+      <ul id="message-list" class="message-list"></ul>
+    </main>
+
+    <p id="error" class="error hidden"></p>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
